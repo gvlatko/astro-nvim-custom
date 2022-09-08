@@ -191,8 +191,8 @@ local config = {
     init = {
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
-      ["L3MON4D3/LuaSnip"] = { disable = true },
-      ["saadparwaiz1/cmp_luasnip"] = { disable = true },
+      -- ["L3MON4D3/LuaSnip"] = { disable = true },
+      -- ["saadparwaiz1/cmp_luasnip"] = { disable = true },
       -- You can also add new plugins here as well:
       -- Add plugins, the packer syntax without the "use"
       -- { "andweeb/presence.nvim" },
