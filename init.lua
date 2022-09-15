@@ -125,6 +125,8 @@ local config = {
     mappings = {
       n = {
         -- ["<leader>lf"] = false -- disable formatting keymap
+        -- in kitty terminal you will have to unbind cmd+enter for this to work
+        ["<A-CR>"] = { function() vim.lsp.buf.code_action() end, desc = "LSP code action" },
       },
     },
     -- add to the global LSP on_attach function
@@ -179,6 +181,10 @@ local config = {
     t = {
       -- setting a mapping to false will disable it
       -- ["<esc>"] = false,
+    },
+    v = {
+      ["J"] = { ":m '>+1<CR>gv=gv", desc = "move down" },
+      ["K"] = { ":m '<-2<CR>gv=gv", desc = "move up" },
     },
   },
 
