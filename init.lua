@@ -42,6 +42,8 @@ local config = {
     darcula = {
       TSTagAttribute = { fg = "#A9B7C6" },
       CursorLineNr = { fg = "#61afef" },
+      NeoTreeNormal = { bg = "#3c3f41" },
+      NeoTreeNormalNC = { bg = "#3c3f41" },
     },
   },
 
