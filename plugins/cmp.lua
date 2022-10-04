@@ -14,11 +14,12 @@ return {
         fallback()
       end
     end, { "i", "s", "c" }),
+    ["<Tab>"] = cmp.mapping.select_next_item(),
   },
   source_priority = {
     nvim_lsp = 1000,
     bufer = 750,
-    luasnip = 500,
+    luasnip = false,
     path = 250,
   },
 }
