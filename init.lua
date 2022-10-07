@@ -162,6 +162,9 @@ local config = {
     skip_setup = {
       "tsserver",
     },
+    formatting = {
+      format_on_save = true,
+    },
     -- easily add or disable built in mappings added during LSP attaching
     mappings = {
       n = {
@@ -324,7 +327,7 @@ local config = {
       ensure_installed = { "sumneko_lua", "tsserver", "tailwindcss", "jsonls", "html", "cssls", "dockerls" },
     },
     -- use mason-tool-installer to configure DAP/Formatters/Linter installation
-    ["mason-tool-installer"] = { -- overrides `require("mason-tool-installer").setup(...)`
+    ["mason-null-ls"] = { -- overrides `require("mason-null-ls").setup(...)`
       ensure_installed = { "prettier", "stylua" },
     },
   },
