@@ -1,9 +1,5 @@
 local cmp = require "cmp"
 return {
-  enabled = function()
-    if vim.bo.buftype == "prompt" then return false end
-    return true
-  end,
   mapping = {
     ["<CR>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
