@@ -40,7 +40,10 @@ local config = {
     -- return highlights
     -- end,
     darcula = {
-      TSTagAttribute = { fg = "#A9B7C6" },
+      ["@tag"] = { fg = "#FFC66D" },
+      ["@constructor"] = { fg = "#FFC66D" },
+      ["@tag.attribute"] = { fg = "#A9B7C6" },
+      ["@include"] = { fg = "#CC7832" },
       CursorLineNr = { fg = "#61afef" },
       NeoTreeNormal = { bg = "#3c3f41" },
       NeoTreeNormalNC = { bg = "#3c3f41" },
@@ -278,6 +281,7 @@ local config = {
         after = "nvim-treesitter",
         config = function() require("treesitter-context").setup {} end,
       },
+      { "nvim-treesitter/playground" },
     },
     -- All other entries override the require("<key>").setup({...}) call for default plugins
     ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
